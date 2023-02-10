@@ -72,6 +72,7 @@ void returnOffsets(int32 w, int offset, int* offsets){
 void dfs(byte* pixels, int32 w, int32 h, int offset, int code){
     int empty, off, pom1 = 3*w, pom2 = 3*w*(h-1);
     push(offset);
+#pragma SIMD_for
     for(empty = 0; !empty; isEmpty(&empty)){
         pop(&off);
         if (!(pixels[off] == 0x00) || off < pom1 || off%(pom1) == 0 || (off+3)%(pom1) == 0 || off > pom2)
@@ -86,6 +87,7 @@ void dfs(byte* pixels, int32 w, int32 h, int offset, int code){
 
 void findBlackSpots(byte* pixels, int32 w, int32 h, int* offset){
     *offset = -1;
+#pragma SIMD_for
     for(int i = 0; i < 3*w*h; i+=3){
         if(pixels[i] == 0x00){
             *offset = i;
@@ -135,7 +137,7 @@ int main(int argc, char *argv[])
 	START_CYCLE_COUNT(start_count);
 
 	/*****************************Grayscale******************************/
-
+#pragma SIMD_for
 	for(int i = 0; i < 3*w*h; i+=3){
 		gray = 0.299*pixels[i] + 0.587*pixels[i+1] + 0.114*pixels[i+2];
 		pixels[i] = gray;
@@ -154,6 +156,7 @@ int main(int argc, char *argv[])
 	copyImage(&pixels_copy, pixels, w, h, bpp);
 
 	START_CYCLE_COUNT(start_count);
+#pragma SIMD_for
 	for(int i = 3*w; i < 3*w*(h-1); i+=3){
 		if(i%(3*w) == 0 || (i+3)%(3*w) == 0){
 			continue;
@@ -173,7 +176,7 @@ int main(int argc, char *argv[])
 	/***************************Laplacian********************************/
 
 	copyImage(&pixels_copy, pixels, w, h, bpp);
-
+#pragma SIMD_for
 	for(int i = 3*w; i < 3*w*(h-1); i+=3){
 		if(i%(3*w) == 0 || (i+3)%(3*w) == 0){
 			continue;
@@ -197,6 +200,7 @@ int main(int argc, char *argv[])
 	/*******************************Coding*******************************/
 
 	START_CYCLE_COUNT(start_count);
+#pragma SIMD_for
 	for(;;){
 		findBlackSpots(pixels, w, h, &offset);
 		if(offset == -1){
@@ -221,6 +225,7 @@ int main(int argc, char *argv[])
 		paint[i] = (byte*)heap_malloc(mem_id,4*sizeof(byte));
 		randomColor(paint[i]);
 	}
+#pragma SIMD_for
 	for(int i = 0; i < 3*w*h; i+=3){
 		if(pixels[i] >= code && pixels[i+1] >= code && pixels[i+2] >= code)
 			continue;
