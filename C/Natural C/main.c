@@ -1,3 +1,7 @@
+/**
+ * @author Nemanja Cenic
+ * @version v1.2
+*/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -15,6 +19,10 @@ const char* laplacian_picture_image = "obradjene_slike/Laplacian_picture.bmp";
 const char* coded_picture_image = "obradjene_slike/Coded_picture.bmp";
 const char* painted_picture_image = "obradjene_slike/Painted_picture.bmp";
 
+/// @brief returnOffsets
+/// @param w - Sirina slike
+/// @param offset - Offset trenutnog piksela
+/// @param offsets - Niz offset-a koji predstavljaju piksele koji se nalaze oko trenutnog piksela (matrica 3x3)
 void returnOffsets(int32 w, int offset, int* offsets){
     offsets[0] = offset - 3*w - 3;
     offsets[1] = offset - 3*w;
@@ -27,6 +35,16 @@ void returnOffsets(int32 w, int offset, int* offsets){
     offsets[8] = offset + 3*w + 3;
 }
 
+/// @brief dfs
+/// @param pixels - Pikseli slike
+/// @param w - Sirina slike
+/// @param h - Visina slike
+/// @param offset - Offset trenutnog piksela
+/// @param code - Kod sa kojim se koduju pikseli
+/// @details Funkcija rekurzivno obilazi sliku i piskele iste konture koduje sa istim kodom.
+/// Nakon svake iteracije u strkturu stack se upisuju lijevi, desni, gornji i donji pikseli.
+/// Ukoliko piksel ne ispunjava neki od datih uslova, uzima se sljedeci.
+/// Funkcija se zavrsava kada se stek struktura isprazni.
 void dfs(byte* pixels, int32 w, int32 h, int offset, int code){
     int* offsets = (int*)malloc(10*sizeof(int));
     int off;
@@ -49,6 +67,12 @@ void dfs(byte* pixels, int32 w, int32 h, int offset, int code){
     free(offsets);
 }
 
+/// @brief findBlackSpots
+/// @param pixels - Pikseli slike
+/// @param w - Sirina
+/// @param h - Visina
+/// @param offset - Upisuje se pronadjeni piskel ili -1 ukoliko piksel nije pronadjen
+/// @details Funkcija je namjenjena za pronalazenje crnih piksela na slici, odnosno piksela koji nisu kodovani.
 void findBlackSpots(byte* pixels, int32 w, int32 h, int* offset){
     int* offsets = (int*)malloc(10*sizeof(int));
     *offset = -1;
@@ -62,11 +86,17 @@ void findBlackSpots(byte* pixels, int32 w, int32 h, int* offset){
     free(offsets);
 }
 
+/// @brief randomColor
+/// @param paint - Niz u kojem se nalaze random generisane RGB komponente piksela
+/// @details Funkcija je namjenjena za bojenje piksela razlicitim, slucajno izabranim, bojama.
 void randomColor(byte* paint){
     for(int i = 0; i < 3; i++)
         paint[i] = rand()%254+1;
 }
 
+/// @brief main
+/// @return 
+/// @details Glavna funkcija u kojoj je realizovan algoritam za detekciju ivica, kao i kodovanje i bojenje
 int main()
 {
     int32 w, h, bpp;

@@ -1,4 +1,12 @@
 #include "bmp_operations.h"
+
+
+/// @brief ReadImage
+/// @param fileName - Putanja do slike
+/// @param pixels - Adresa niza piksela u koju se upisuju pikseli ucitane slike
+/// @param width - Adresa promjenjive u koju se upisuje sirina slike
+/// @param height - Adresa promjenjive u koju se upisuje visina slike
+/// @param bytesPerPixel - Adresa promjenjive u koju se upisuje broj bajtova po pikselu
 void ReadImage(const char *fileName, byte **pixels, int32 *width, int32 *height, int32 *bytesPerPixel)
 {
         FILE *imageFile = fopen(fileName, "rb");
@@ -30,6 +38,13 @@ void ReadImage(const char *fileName, byte **pixels, int32 *width, int32 *height,
         fclose(imageFile);
 }
 
+
+/// @brief copyImage
+/// @param copy_pixels - Adresa niza piksela u koju se upisuju kopirani pikseli
+/// @param pixels - Niz piksela koji se kopiraju
+/// @param width - Sirina slike
+/// @param height - Visina slike
+/// @param bytesPerPixel - Broj bajtova po pikselu
 void copyImage(byte** copy_pixels, byte* pixels, int32 width, int32 height, int32 bytesPerPixel){
     int i = 0;
     int unpaddedRowSize = width*bytesPerPixel;
@@ -41,6 +56,12 @@ void copyImage(byte** copy_pixels, byte* pixels, int32 width, int32 height, int3
     }
 }
 
+/// @brief WriteImage
+/// @param fileName - Naziv slike
+/// @param pixels - Niz piksela slike
+/// @param width - Sirina slike
+/// @param height - Visina slike
+/// @param bytesPerPixel - Broj bajtova po pikselu
 void WriteImage(const char *fileName, byte *pixels, int32 width, int32 height, int32 bytesPerPixel)
 {
         FILE *outputFile = fopen(fileName, "wb");

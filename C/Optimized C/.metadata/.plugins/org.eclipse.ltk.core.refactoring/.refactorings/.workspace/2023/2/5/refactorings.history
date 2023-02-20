@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/Optimised_C/Debug/Gaussian_blur.bmp" element2="/Optimised_C/Debug/Grayscale.bmp" element3="/Optimised_C/Debug/Laplacian_picture.bmp" element4="/Optimised_C/Debug/Painted_picture.bmp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1675248378059"/>
+</session>

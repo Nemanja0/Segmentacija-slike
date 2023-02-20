@@ -1,0 +1,131 @@
+IPAF version 1
+Ssef <
+G_isEmpty sid<
+>>Sptr <
+G_isEmpty ptr<
+12_|
+11_|
+10_|
+9_|
+8_|
+7_|
+6_|
+5_7_|
+4_|5_
+3_|
+2_|
+1_|
+0_|
+>>Smust <
+G_isEmpty ptb<
+>>Scnal <
+_isEmpty <
+_head ?
+_isEmpty:1 ?
+>>Sprpc <
+_isEmpty <
+>>Ssef <
+G_push sid<
+DG__heap_malloc 
+27_
+28_
+>>Sptr <
+G_push ptr<
+28_|1_
+27_|1_
+26_|
+25_|
+24_|
+23_|
+22_|
+21_|
+20_|
+19_|
+18_|
+17_|
+16_|
+15_|
+14_|
+13_|
+12_|
+11_|
+10_|
+9_|
+8_|
+7_|
+6_|
+5_|
+4_|
+3_11_7_|
+2_|
+1_2_4_5_6_8_9_10_12_13_14_15_|
+0_|
+>>Smust <
+G_push ptb<
+G__heap_malloc 
+>>Scnal <
+_push <
+_head ?
+__heap_malloc:r ?
+_push:1 ?
+>>Sprpc <
+_push <
+__heap_malloc:2 n
+__heap_malloc:1 n
+>>Ssef <
+G_pop sid<
+DG__printf32 
+30_
+31_
+DG__heap_free 
+30_
+31_
+>>Sptr <
+G_pop ptr<
+31_|1_
+30_|1_
+29_|
+28_|
+27_|
+26_|
+25_|
+24_|
+23_|
+22_|
+21_|
+20_|
+19_|
+18_|
+17_|
+16_|
+15_|
+14_|
+13_|
+12_|
+11_|
+10_|
+9_|
+8_|
+7_|
+6_|
+5_|
+4_|
+3_|
+2_|
+1_2_3_5_6_7_8_9_11_13_15_16_18_19_24_|10_
+0_17_14_12_4_|
+>>Smust <
+G_pop ptb<
+G__heap_free 
+G__printf32 
+>>Scnal <
+_pop <
+__printf32:r ?
+_head ?
+_pop:1 ?
+>>Sprpc <
+_pop <
+__heap_free:2 n
+__heap_free:1 n
+__printf32:1 n
+>>

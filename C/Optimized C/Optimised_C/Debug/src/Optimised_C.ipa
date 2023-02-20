@@ -1,0 +1,527 @@
+IPAF version 1
+Ssef <
+G_findBlackSpots sid<
+>>Sptr <
+G_findBlackSpots ptr<
+0_|
+1_|
+2_|7_
+3_|
+4_|
+5_|
+6_|
+7_8_10_11_|
+8_|
+9_|
+10_|
+11_|
+12_|
+13_|
+14_|
+15_|
+16_|
+>>Smust <
+G_findBlackSpots ptb<
+>>Scnal <
+_findBlackSpots <
+_findBlackSpots:1 ?
+_findBlackSpots:2 ?
+_findBlackSpots:3 ?
+_findBlackSpots:4 ?
+>>Sprpc <
+_findBlackSpots <
+>>Ssef <
+G_returnOffsets sid<
+>>Sptr <
+G_returnOffsets ptr<
+0_|
+1_|
+2_|
+3_4_6_8_11_13_|
+4_|
+5_7_|
+6_|
+7_|
+8_|
+9_|
+10_|3_
+11_|
+12_|
+13_|
+>>Smust <
+G_returnOffsets ptb<
+>>Scnal <
+_returnOffsets <
+_returnOffsets:1 ?
+_returnOffsets:2 ?
+_returnOffsets:3 ?
+>>Sprpc <
+_returnOffsets <
+>>Ssef <
+G_InitSRU sid<
+>>Sptr <
+G_InitSRU ptr<
+0_|
+1_|
+2_|
+>>Smust <
+G_InitSRU ptb<
+>>Scnal <
+_InitSRU <
+>>Sprpc <
+_InitSRU <
+>>Ssef <
+G_dfs sid<
+DG_pop 
+51_
+52_
+DG_push 
+49_
+50_
+DG_isEmpty 
+47_
+48_
+>>Sptr <
+G_dfs ptr<
+0_|
+1_|
+2_|7_
+3_|4_
+4_6_14_21_22_27_28_30_31_33_|
+5_32_29_|
+6_|
+7_|
+8_|
+9_|
+10_|
+11_|
+12_|
+13_|15_
+14_|
+15_|
+16_|
+17_|
+18_|
+19_|
+20_|
+21_|
+22_|
+23_|
+24_|
+25_|
+26_|4_
+27_|
+28_|
+29_|
+30_|
+31_|
+32_|
+33_|
+34_|
+35_|
+36_|
+37_|
+38_|
+39_|
+40_|
+41_|
+42_|
+43_|
+44_|
+45_|
+46_|
+47_|53_
+48_|2_
+49_|55_53_
+50_|54_53_4_
+51_|55_53_4_
+52_|54_53_13_
+53_|
+54_|4_
+55_|4_
+>>Smust <
+G_dfs ptb<
+G_isEmpty t
+G_pop 
+G_push 
+>>Scnal <
+_dfs <
+_dfs:1 ?
+_dfs:2 ?
+_dfs:3 ?
+_dfs:4 ?
+_dfs:5 ?
+>>Sprpc <
+_dfs <
+_isEmpty:1 n
+_pop:1 n
+_push:1 n
+>>Ssef <
+G_randomColor sid<
+DG_rand 
+10_
+11_
+>>Sptr <
+G_randomColor ptr<
+0_7_|
+1_5_6_8_|
+2_|
+3_|
+4_|1_
+5_|
+6_|
+7_|
+8_|
+9_|
+10_|1_
+11_|1_
+>>Smust <
+G_randomColor ptb<
+G_rand 
+>>Scnal <
+_randomColor <
+_rand:r ?
+_randomColor:1 ?
+>>Sprpc <
+_randomColor <
+>>Ssef <
+G_main sid<
+DG_adi_initComponents 
+
+
+DG_InitSRU 
+237_
+238_
+DG_ReadImage 
+235_
+236_
+DG_copyImage 
+233_
+234_
+DG_returnOffsets 
+
+232_
+DG_dfs 
+230_
+231_
+DG_findBlackSpots 
+228_
+229_
+DG__heap_malloc 
+222_
+223_
+DG_randomColor 
+226_
+227_
+DG_WriteImage 
+224_
+225_
+DG__printf32 
+222_
+223_
+DG__heap_free 
+222_
+223_
+>>Sptr <
+G_main ptr<
+239_|
+238_|1_
+237_|1_
+236_|223_169_159_174_164_
+235_|222_169_159_174_164_
+234_|223_1_120_
+233_|222_120_125_
+232_|116_
+231_|239_223_1_61_
+230_|1_222_239_61_
+229_|86_
+228_|80_
+227_|223_55_
+226_|222_
+225_|223_
+224_|222_
+223_|1_
+222_|1_
+221_|
+220_|
+219_|
+218_|
+217_|
+216_|
+215_|
+214_|
+213_|
+212_|
+211_|
+210_|
+209_|
+208_|
+207_|
+206_|
+205_|
+204_|
+203_|
+202_|
+201_|
+200_|
+199_|
+198_|
+197_|1_
+196_|
+195_|
+194_|
+193_|
+192_|
+191_|
+190_|
+189_|
+188_|
+187_|
+186_|
+185_|
+184_|
+183_|
+182_|
+181_|
+180_|
+179_|
+178_|
+177_|
+176_|
+175_|
+174_|175_
+173_|
+172_|
+171_|
+170_|
+169_|170_
+168_|
+167_|
+166_|
+165_|
+164_|165_
+163_|
+162_|
+161_|
+160_|
+159_|160_
+158_|
+157_|
+156_|
+155_|
+154_|
+153_|
+152_|
+151_|155_
+150_|
+149_|
+148_|
+147_|
+146_|
+145_|
+144_|
+143_|
+142_|
+141_|
+140_|
+139_|
+138_|
+137_|
+136_|
+135_|
+134_|
+133_|
+132_|
+131_|44_
+130_|
+129_|1_
+128_|
+127_|1_
+126_|
+125_|1_
+124_|
+123_|
+122_|
+121_|
+120_|121_
+119_|
+118_|
+117_|
+116_|1_
+115_|
+114_|
+113_|
+112_|
+111_|
+110_|1_
+109_|
+108_|
+107_|
+106_|
+105_|
+104_|
+103_|
+102_|
+101_|
+100_|
+99_|
+98_|
+97_|
+96_|
+95_|
+94_|
+93_|
+92_|
+91_|
+90_|
+89_|
+88_|
+87_|
+86_|87_
+85_|
+84_|1_
+83_|
+82_|1_
+81_|
+80_|1_
+79_|
+78_|
+77_|
+76_|
+75_|
+74_|
+73_|
+72_|
+71_|
+70_|
+69_|
+68_|
+67_|
+66_|
+65_|1_
+64_|
+63_|1_
+62_|
+61_|1_
+60_|
+59_|
+58_|
+57_|
+56_|
+55_|1_
+54_|
+53_|
+52_|
+51_|
+50_|
+49_|
+48_|
+47_|
+46_|
+45_|
+44_|1_
+43_|
+42_|
+41_|
+40_|44_
+39_|
+38_|
+37_|
+36_|
+35_|
+34_|
+33_|
+32_|
+31_|
+30_|
+29_|
+28_|
+27_|
+26_|
+25_|
+24_|
+23_|
+22_|
+21_|
+20_|
+19_|
+18_|
+17_|
+16_|
+15_|
+14_|
+13_|
+12_|
+11_|
+10_|
+9_|
+8_|
+7_|
+6_|10_
+5_|
+4_|
+3_|
+2_181_156_153_144_140_137_101_98_94_72_69_51_45_42_37_34_29_26_21_17_11_8_|
+1_3_7_9_12_14_15_16_18_19_20_22_24_25_27_28_30_32_33_35_36_38_41_43_46_50_52_67_68_70_71_73_75_76_95_96_97_99_102_103_104_105_106_107_112_113_114_138_139_141_142_143_145_146_147_148_152_154_157_182_183_184_185_186_187_|0_136_133_93_91_57_100_49_135_134_92_58_151_6_
+0_|
+>>Smust <
+G_main ptb<
+G_WriteImage 
+G_randomColor 
+G_dfs 
+G_findBlackSpots 
+G__heap_free 
+G_returnOffsets t
+G_copyImage 
+G__printf32 
+G_ReadImage 
+G__heap_malloc 
+G_InitSRU t
+G_adi_initComponents t
+>>Scnal <
+_main <
+_painted_picture_image ~2_0_n
+_offsets ?
+__printf32:r ?
+_image ~2_0_n
+__heap_malloc:r ?
+_mem_id =1_
+_adi_initComponents:r ?
+>>Sprpc <
+_main <
+_WriteImage:5 n
+_WriteImage:4 n
+_WriteImage:3 n
+_WriteImage:2 n
+_WriteImage:1 n
+_randomColor:1 n
+_dfs:5 n
+_dfs:4 n
+_dfs:3 n
+_dfs:2 n
+_dfs:1 n
+_findBlackSpots:4 n
+_findBlackSpots:3 n
+_findBlackSpots:2 n
+_findBlackSpots:1 n
+__heap_free:2 n
+__heap_free:1 n
+_returnOffsets:3 n
+_returnOffsets:2 n
+_returnOffsets:1 n
+_copyImage:5 n
+_copyImage:4 n
+_copyImage:3 n
+_copyImage:2 n
+_copyImage:1 n
+__printf32:3 n
+__printf32:2 n
+__printf32:1 n
+_ReadImage:5 n
+_ReadImage:4 n
+_ReadImage:3 n
+_ReadImage:2 n
+_ReadImage:1 n
+__heap_malloc:2 n
+__heap_malloc:1 n
+>>

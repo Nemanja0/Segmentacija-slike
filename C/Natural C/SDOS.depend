@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1676046215 source:c:\users\medion\desktop\projekktni\sdos\bmp_operations.c
+	"bmp_operations.h"
+
+1675948839 c:\users\medion\desktop\projekktni\sdos\bmp_operations.h
+	<stdint.h>
+	<stdbool.h>
+	<stdio.h>
+
+1676046293 source:c:\users\medion\desktop\projekktni\sdos\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	"bmp_operations.h"
+	"stack.h"
+
+1675952589 source:c:\users\medion\desktop\projekktni\sdos\stack.c
+	"stack.h"
+
+1612882570 c:\users\medion\desktop\projekktni\sdos\stack.h
+	<stdio.h>
+

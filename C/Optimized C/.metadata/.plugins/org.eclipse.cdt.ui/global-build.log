@@ -1,0 +1,407 @@
+23:23:20 **** Incremental Build of configuration Debug for project Optimised_C ****
+make all 
+'Building file: ../system/startup_ldf/app_IVT.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "system/startup_ldf/app_IVT.doj" "../system/startup_ldf/app_IVT.s"
+'Finished building: ../system/startup_ldf/app_IVT.s'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/sru/sru_config.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/sru/sru_config.d" -o "system/sru/sru_config.doj" "../system/sru/sru_config.c"
+'Finished building: ../system/sru/sru_config.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../src/Optimised_C.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/Optimised_C.d" -o "src/Optimised_C.doj" "../src/Optimised_C.c"
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+'Finished building: ../src/Optimised_C.c'
+' '
+'Building file: ../src/bmp_operations.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/bmp_operations.d" -o "src/bmp_operations.doj" "../src/bmp_operations.c"
+"..\src\bmp_operations.c", line 122: cc0223: {D} warning: function "ceil" declared implicitly
+  	int paddedRowSize = (4 * ceil((*width) / 4.0f)) * (*bytesPerPixel);
+  	                         ^
+
+"..\src\bmp_operations.c", line 122: cc1080: {D} warning: Function does not have a full prototype
+  	int paddedRowSize = (4 * ceil((*width) / 4.0f)) * (*bytesPerPixel);
+  	                         ^
+
+'Finished building: ../src/bmp_operations.c'
+' '
+'Building file: ../src/stack.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/stack.d" -o "src/stack.doj" "../src/stack.c"
+'Finished building: ../src/stack.c'
+' '
+'Building target: Optimised_C.dxe'
+'Invoking: CrossCore SHARC Linker'
+cc21k -proc ADSP-21489 -si-revision 0.2 -T "C:/Users/Medion/Desktop/Optimised C/Optimised_C/system/startup_ldf/app.ldf" -no-mem -L "C:/Users/Medion/Desktop/Optimised C/Optimised_C/Debug/system/startup_ldf" -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o Optimised_C.dxe @input-file.txt
+
+[Error li1021]  The following symbols referenced in processor 'p0' could not be resolved:
+        'copyImage [_copyImage]' referenced from 'src\Optimised_C.doj'
+
+Linker finished with 1 error 
+cc3089: fatal error: Link failed (code:1)
+make: *** [makefile:95: Optimised_C.dxe] Error 1
+23:23:44 **** Incremental Build of configuration Debug for project Optimised_C ****
+make all 
+'Building file: ../system/startup_ldf/app_IVT.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "system/startup_ldf/app_IVT.doj" "../system/startup_ldf/app_IVT.s"
+'Finished building: ../system/startup_ldf/app_IVT.s'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/sru/sru_config.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/sru/sru_config.d" -o "system/sru/sru_config.doj" "../system/sru/sru_config.c"
+'Finished building: ../system/sru/sru_config.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../src/Optimised_C.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/Optimised_C.d" -o "src/Optimised_C.doj" "../src/Optimised_C.c"
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+'Finished building: ../src/Optimised_C.c'
+' '
+'Building file: ../src/bmp_operations.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/bmp_operations.d" -o "src/bmp_operations.doj" "../src/bmp_operations.c"
+"..\src\bmp_operations.c", line 122: cc0223: {D} warning: function "ceil" declared implicitly
+  	int paddedRowSize = (4 * ceil((*width) / 4.0f)) * (*bytesPerPixel);
+  	                         ^
+
+"..\src\bmp_operations.c", line 122: cc1080: {D} warning: Function does not have a full prototype
+  	int paddedRowSize = (4 * ceil((*width) / 4.0f)) * (*bytesPerPixel);
+  	                         ^
+
+'Finished building: ../src/bmp_operations.c'
+' '
+'Building file: ../src/stack.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/stack.d" -o "src/stack.doj" "../src/stack.c"
+'Finished building: ../src/stack.c'
+' '
+'Building target: Optimised_C.dxe'
+'Invoking: CrossCore SHARC Linker'
+cc21k -proc ADSP-21489 -si-revision 0.2 -T "C:/Users/Medion/Desktop/Optimised C/Optimised_C/system/startup_ldf/app.ldf" -no-mem -L "C:/Users/Medion/Desktop/Optimised C/Optimised_C/Debug/system/startup_ldf" -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o Optimised_C.dxe @input-file.txt
+prelinker: Recompiling ..\src\Optimised_C.c
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+prelinker: Recompiling ..\src\bmp_operations.c
+"..\src\bmp_operations.c", line 122: cc0223: {D} warning: function "ceil" declared implicitly
+  	int paddedRowSize = (4 * ceil((*width) / 4.0f)) * (*bytesPerPixel);
+  	                         ^
+
+"..\src\bmp_operations.c", line 122: cc1080: {D} warning: Function does not have a full prototype
+  	int paddedRowSize = (4 * ceil((*width) / 4.0f)) * (*bytesPerPixel);
+  	                         ^
+
+prelinker: Recompiling ..\src\Optimised_C.c
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+'Finished building target: Optimised_C.dxe'
+' '
+23:24:28 **** Incremental Build of configuration Debug for project Optimised_C ****
+make all 
+'Building file: ../system/startup_ldf/app_IVT.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "system/startup_ldf/app_IVT.doj" "../system/startup_ldf/app_IVT.s"
+'Finished building: ../system/startup_ldf/app_IVT.s'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/sru/sru_config.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/sru/sru_config.d" -o "system/sru/sru_config.doj" "../system/sru/sru_config.c"
+'Finished building: ../system/sru/sru_config.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../src/Optimised_C.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/Optimised_C.d" -o "src/Optimised_C.doj" "../src/Optimised_C.c"
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+'Finished building: ../src/Optimised_C.c'
+' '
+'Building file: ../src/bmp_operations.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/bmp_operations.d" -o "src/bmp_operations.doj" "../src/bmp_operations.c"
+'Finished building: ../src/bmp_operations.c'
+' '
+'Building file: ../src/stack.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/stack.d" -o "src/stack.doj" "../src/stack.c"
+'Finished building: ../src/stack.c'
+' '
+'Building target: Optimised_C.dxe'
+'Invoking: CrossCore SHARC Linker'
+cc21k -proc ADSP-21489 -si-revision 0.2 -T "C:/Users/Medion/Desktop/Optimised C/Optimised_C/system/startup_ldf/app.ldf" -no-mem -L "C:/Users/Medion/Desktop/Optimised C/Optimised_C/Debug/system/startup_ldf" -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o Optimised_C.dxe @input-file.txt
+prelinker: Recompiling ..\src\bmp_operations.c
+'Finished building target: Optimised_C.dxe'
+' '
+23:27:00 **** Incremental Build of configuration Debug for project Optimised_C ****
+make all 
+'Building file: ../system/startup_ldf/app_IVT.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "system/startup_ldf/app_IVT.doj" "../system/startup_ldf/app_IVT.s"
+'Finished building: ../system/startup_ldf/app_IVT.s'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/sru/sru_config.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/sru/sru_config.d" -o "system/sru/sru_config.doj" "../system/sru/sru_config.c"
+'Finished building: ../system/sru/sru_config.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../src/Optimised_C.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/Optimised_C.d" -o "src/Optimised_C.doj" "../src/Optimised_C.c"
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+'Finished building: ../src/Optimised_C.c'
+' '
+'Building file: ../src/bmp_operations.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/bmp_operations.d" -o "src/bmp_operations.doj" "../src/bmp_operations.c"
+'Finished building: ../src/bmp_operations.c'
+' '
+'Building file: ../src/stack.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov0 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/stack.d" -o "src/stack.doj" "../src/stack.c"
+'Finished building: ../src/stack.c'
+' '
+'Building target: Optimised_C.dxe'
+'Invoking: CrossCore SHARC Linker'
+cc21k -proc ADSP-21489 -si-revision 0.2 -T "C:/Users/Medion/Desktop/Optimised C/Optimised_C/system/startup_ldf/app.ldf" -no-mem -L "C:/Users/Medion/Desktop/Optimised C/Optimised_C/Debug/system/startup_ldf" -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o Optimised_C.dxe @input-file.txt
+prelinker: Recompiling ..\src\Optimised_C.c
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+prelinker: Recompiling ..\src\bmp_operations.c
+prelinker: Recompiling ..\src\bmp_operations.c
+'Finished building target: Optimised_C.dxe'
+' '
+23:28:25 **** Incremental Build of configuration Debug for project Optimised_C ****
+make all 
+'Building file: ../system/startup_ldf/app_IVT.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "system/startup_ldf/app_IVT.doj" "../system/startup_ldf/app_IVT.s"
+'Finished building: ../system/startup_ldf/app_IVT.s'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/sru/sru_config.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/sru/sru_config.d" -o "system/sru/sru_config.doj" "../system/sru/sru_config.c"
+'Finished building: ../system/sru/sru_config.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../src/Optimised_C.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/Optimised_C.d" -o "src/Optimised_C.doj" "../src/Optimised_C.c"
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+'Finished building: ../src/Optimised_C.c'
+' '
+'Building file: ../src/bmp_operations.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/bmp_operations.d" -o "src/bmp_operations.doj" "../src/bmp_operations.c"
+'Finished building: ../src/bmp_operations.c'
+' '
+'Building file: ../src/stack.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/stack.d" -o "src/stack.doj" "../src/stack.c"
+'Finished building: ../src/stack.c'
+' '
+'Building target: Optimised_C.dxe'
+'Invoking: CrossCore SHARC Linker'
+cc21k -proc ADSP-21489 -si-revision 0.2 -T "C:/Users/Medion/Desktop/Optimised C/Optimised_C/system/startup_ldf/app.ldf" -no-mem -L "C:/Users/Medion/Desktop/Optimised C/Optimised_C/Debug/system/startup_ldf" -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o Optimised_C.dxe @input-file.txt
+'Finished building target: Optimised_C.dxe'
+' '
+23:32:07 **** Incremental Build of configuration Debug for project Optimised_C ****
+make all 
+'Building file: ../system/startup_ldf/app_IVT.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "system/startup_ldf/app_IVT.doj" "../system/startup_ldf/app_IVT.s"
+'Finished building: ../system/startup_ldf/app_IVT.s'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/sru/sru_config.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/sru/sru_config.d" -o "system/sru/sru_config.doj" "../system/sru/sru_config.c"
+'Finished building: ../system/sru/sru_config.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../src/Optimised_C.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/Optimised_C.d" -o "src/Optimised_C.doj" "../src/Optimised_C.c"
+"..\src\Optimised_C.c", line 142 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 142 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+"..\src\Optimised_C.c", line 209 (col. 3): cc1435: {D} warning: vectorization unsuccessful - compiler unable to ascertain criteria needed for vectorization
+
+"..\src\Optimised_C.c", line 209 (col. 3): cc1436: {D} warning: compiler unable to vectorize loop - pragma used instead to help scheduling
+
+'Finished building: ../src/Optimised_C.c'
+' '
+'Building file: ../src/bmp_operations.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/bmp_operations.d" -o "src/bmp_operations.doj" "../src/bmp_operations.c"
+'Finished building: ../src/bmp_operations.c'
+' '
+'Building file: ../src/stack.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/stack.d" -o "src/stack.doj" "../src/stack.c"
+'Finished building: ../src/stack.c'
+' '
+'Building target: Optimised_C.dxe'
+'Invoking: CrossCore SHARC Linker'
+cc21k -proc ADSP-21489 -si-revision 0.2 -T "C:/Users/Medion/Desktop/Optimised C/Optimised_C/system/startup_ldf/app.ldf" -no-mem -L "C:/Users/Medion/Desktop/Optimised C/Optimised_C/Debug/system/startup_ldf" -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o Optimised_C.dxe @input-file.txt
+'Finished building target: Optimised_C.dxe'
+' '
+23:35:01 **** Incremental Build of configuration Debug for project Optimised_C ****
+make all 
+'Building file: ../system/startup_ldf/app_IVT.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_IVT.d" -o "system/startup_ldf/app_IVT.doj" "../system/startup_ldf/app_IVT.s"
+'Finished building: ../system/startup_ldf/app_IVT.s'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_heaptab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore SHARC Assembler'
+easm21k -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -si-revision 0.2 -g -DCORE0 -D_DEBUG @includes-733d6a66626262d75bc7abbd1c720331.txt -swc -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/sru/sru_config.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/sru/sru_config.d" -o "system/sru/sru_config.doj" "../system/sru/sru_config.c"
+'Finished building: ../system/sru/sru_config.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../src/Optimised_C.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/Optimised_C.d" -o "src/Optimised_C.doj" "../src/Optimised_C.c"
+'Finished building: ../src/Optimised_C.c'
+' '
+'Building file: ../src/bmp_operations.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/bmp_operations.d" -o "src/bmp_operations.doj" "../src/bmp_operations.c"
+'Finished building: ../src/bmp_operations.c'
+' '
+'Building file: ../src/stack.c'
+'Invoking: CrossCore SHARC C/C++ Compiler'
+cc21k -c -file-attr ProjectName="Optimised_C" -proc ADSP-21489 -flags-compiler --no_wrap_diagnostics -si-revision 0.2 -O -Ov100 -ipa -g -DCORE0 -DDO_CYCLE_COUNTS -D_DEBUG @includes-088a265c9bddd25b263aa692857d5567.txt -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -swc -gnu-style-dependencies -MD -Mo "src/stack.d" -o "src/stack.doj" "../src/stack.c"
+'Finished building: ../src/stack.c'
+' '
+'Building target: Optimised_C.dxe'
+'Invoking: CrossCore SHARC Linker'
+cc21k -proc ADSP-21489 -si-revision 0.2 -T "C:/Users/Medion/Desktop/Optimised C/Optimised_C/system/startup_ldf/app.ldf" -no-mem -L "C:/Users/Medion/Desktop/Optimised C/Optimised_C/Debug/system/startup_ldf" -flags-link -MDCORE0,-MDDEBUG -add-debug-libpaths -o Optimised_C.dxe @input-file.txt
+prelinker: Recompiling ..\src\Optimised_C.c
+prelinker: Recompiling ..\src\bmp_operations.c
+'Finished building target: Optimised_C.dxe'
+' '
